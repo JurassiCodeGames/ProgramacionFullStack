@@ -1,0 +1,472 @@
+/*/Fuentes de Texto/*/
+
+@font-face {
+    font-family: Poppins-Medium;
+    src: url(/public/fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: Poppins-SemiBold;
+    src: url(/public/fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Bold;
+    src: url(/public/fonts/Poppins-Bold.ttf);
+}
+
+
+/*/Base de Template/*/
+
+#textoJugar {
+  position: relative;
+  top: 1px;
+  left: -4px;
+  font-family: Poppins-Bold;
+  color: #31b146;
+}
+#textoNosotros {
+  position: relative;
+  top: 1px;
+  font-family: Poppins-Bold;
+  color: #3182b1;
+}
+
+footer {
+  border-top: 1px solid rgba(255,255,255,0.3);
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-family: Poppins-Medium;
+  background: rgba(0,0,0,0.65);
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.4);
+}
+
+/*/Home/*/
+
+.fondo-home {
+    background-image: url(/public/images/Fondos/HomeBackground.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#Draftosaurus {
+  width: 60%;
+  max-width: 400px;
+  height: auto;
+  position: relative;
+  top: -20px;
+}
+
+.cajaHome {
+  position: relative;
+  top: -100px;
+  margin: 40px auto;
+  max-width: 900px;
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.4);
+}
+
+.tituloHome {
+  font-family: Poppins-SemiBold;
+  color: #f1f1f1;
+  background: linear-gradient(135deg, #a17835, #000000);
+  padding: 8px 14px;
+  border-radius: 16px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.parrafoHome {
+  font-family: Poppins-Medium;
+  color: #ffffff;
+  background: linear-gradient(135deg, #000000, #a17835);
+  padding: 12px 16px;
+  border-radius: 16px;
+  margin-bottom: 10px;
+  line-height: 1.6;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+}
+
+#DraftosaurusFuturista {
+    position: relative;
+    top: -50px;
+    left: -20px;
+}
+
+.tituloHomeFuturista {
+  font-family: Poppins-SemiBold;
+  color: #f1f1f1;
+  background: linear-gradient(135deg, #2370c7, #000000);
+  padding: 8px 14px;
+  border-radius: 16px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.parrafoHomeFuturista {
+  font-family: Poppins-Medium;
+  color: #ffffff;
+  background: linear-gradient(135deg, #000000, #2370c7);
+  padding: 12px 16px;
+  border-radius: 16px;
+  margin-bottom: 10px;
+  line-height: 1.6;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+}
+
+#textoInfoFinal {
+    font-family: Poppins-SemiBold;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    position: relative;
+    background-color: #000000;
+    padding: 6px;
+    border-radius: 20px;
+}
+
+#textoJugarFinal {
+    font-family: Poppins-SemiBold;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    text-decoration: none;
+    position: relative;
+    top: -100px;
+    background-color: #113e72;
+    padding: 6px;
+    border-radius: 20px;
+}
+
+/*/Play/*/
+
+.fondo-play {
+    background-image: url(/public/images/Fondos/PlayBackground.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*/Rules/*/
+.fondo-rules{
+    background-image: url(/public/images/Fondos/RulesBackground.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.CajaRules {
+  margin: 40px auto;
+  max-width: 900px;
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.4);
+}
+
+.tituloRules {
+  font-family: Poppins-SemiBold;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(135deg, #000000, #1ec542);
+  padding: 8px 14px;
+  border-radius: 16px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.parrafoRules {
+  font-family: Poppins-Medium;
+  color: #ffffff;
+  background: linear-gradient(135deg, #074715, #000000);
+  padding: 12px 16px;
+  border-radius: 16px;
+  margin-bottom: 10px;
+  line-height: 1.6;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+}
+
+/*/Info/*/
+
+.fondo-info {
+    background-image: url(/public/images/Fondos/InfoBackground.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.cajaInfo {
+  position: relative;
+  top: -100px;
+  margin: 40px auto;
+  max-width: 900px;
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.4);
+}
+
+.tituloInfo {
+  font-family: Poppins-SemiBold;
+  color: #f1f1f1;
+  background: linear-gradient(135deg, #214e77, #000000);
+  padding: 8px 14px;
+  border-radius: 16px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.parrafoInfo {
+  font-family: Poppins-Medium;
+  color: #ffffff;
+  background: linear-gradient(135deg, #000000, #214e77);
+  padding: 12px 16px;
+  border-radius: 16px;
+  margin-bottom: 10px;
+  line-height: 1.6;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+}
+
+.tituloMasInfo {
+  font-family: Poppins-SemiBold;
+  color: #f1f1f1;
+  background: linear-gradient(135deg, #1e0e55, #011635);
+  padding: 8px 14px;
+  border-radius: 16px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.parrafoMasInfo {
+  font-family: Poppins-Medium;
+  color: #ffffff;
+  background: linear-gradient(135deg, #011635, #1e0e55);
+  padding: 12px 16px;
+  border-radius: 16px;
+  margin-bottom: 10px;
+  line-height: 1.6;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+}
+
+/*/Project/*/
+
+.fondo-project {
+    background-image: url(/public/images/Fondos/ProjectBackground.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.cajaProject {
+  margin: 40px auto;
+  max-width: 900px;
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.4);
+}
+
+.tituloProject {
+  font-family: Poppins-SemiBold;
+  color: white;
+  background: linear-gradient(135deg, #000000, #2d2d2d);
+  padding: 8px 14px;
+  border-radius: 16px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.parrafoProject {
+  font-family: Poppins-Medium;
+  color: #111;
+  background: #ffffffee;
+  padding: 12px 16px;
+  border-radius: 16px;
+  margin-bottom: 10px;
+  line-height: 1.6;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+}
+
+/*/MyV/*/
+
+.fondo-myv {
+    background-image: url(/public/images/Fondos/MyVBackground.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.cajaMyV {
+  margin: 40px auto;
+  max-width: 900px;
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.4);
+}
+
+.tituloMyV {
+  font-family: Poppins-SemiBold;
+  color: white;
+  background: linear-gradient(135deg, #000000, #2d2d2d);
+  padding: 8px 14px;
+  border-radius: 16px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.parrafoMyV {
+  font-family: Poppins-Medium;
+  color: #111;
+  background: #ffffffee;
+  padding: 12px 16px;
+  border-radius: 16px;
+  margin-bottom: 10px;
+  line-height: 1.6;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+}
+
+.valores-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 16px;
+}
+
+.valor-item {
+  background: #ffffffee;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+  transition: transform 0.2s ease;
+}
+
+.valor-item:hover { transform: translateY(-3px);
+}
+
+.valor-item h3 {
+  margin-top: 0;
+  font-family: Poppins-SemiBold;
+  color: #127e12;
+}
+
+.valor-item p {
+  margin: 8px 0 0;
+  font-family: Poppins-Medium;
+  color: #000;
+}
+
+/*/Us/*/
+
+.fondo-us {
+    background-image: url(/public/images/Fondos/UsBackground.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.CajaUs {
+  margin: 40px auto;
+  max-width: 900px;
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.4);
+}
+
+.tituloUs {
+  font-family: Poppins-SemiBold;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(135deg, #000000, #2d2d2d);
+  padding: 8px 14px;
+  border-radius: 16px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.parrafoUs {
+  font-family: Poppins-Medium;
+  color: #000000;
+  background: linear-gradient(135deg, #fafafa, #ffffff);
+  padding: 12px 16px;
+  border-radius: 16px;
+  margin-bottom: 10px;
+  line-height: 1.6;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+}
+
+/* Register y Login */
+
+.login-register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.loginBox {
+    background: white;
+    padding: 30px 25px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.loginLogo {
+    width: 80px;
+}
+
+.login-header h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-weight: 700;
+}
+
+.form-group {
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+.form-group label {
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #34495e;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.form-group input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 5px;
+}
