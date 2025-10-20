@@ -10,11 +10,20 @@ Integrantes:
 - Bianca Duarte (Integrante 3)
 
 Instrucciones para instalar el proyecto:
-1. En el inicio del repositorio, abrir la pestaña de Code y darle clic a "Download .zip".
-2. Extraer el .zip y abrir la carpeta a través de Visual Studio Code.
-3. Tener instalado XAMPP (y ejecutarlo) y Node.js.
-4. Una vez con el proyecto en Visual Studio Code, abrir la terminal y ejecutar "composer run dev".
-5. Por último paso: abrir la dirección: http://127.0.0.1:8000/
+1. Como primer paso estando en nuestro repositorio, es necesario elegir el branch "develop" para visualizar nuestro proyecto, para luego abrir la pestaña de Code y darle clic a "Download .zip".
+2. Extraer el .zip y abrir el proyecto a través de Visual Studio Code (básicamente abrir la carpeta del proyecto).
+3. Antes de iniciar el proyecto, es necesario tener instalado XAMPP 8.2.12, Composer 2.8.11 y Node.js 22.18.0.
+4. Una vez con el proyecto en Visual Studio Code, encender XAMPP (Apache y MySQL).
+5. Abrir la terminal en Visual Studio Code con la combinación Ctrl + Shift + P y escribir "Terminal: Select Default Profile" para luego abrir "Command Prompt (cmd.exe)".
+6. Luego ejecutar los comandos: "composer install" y "npm install"
+7. Crear archivo database.sqlite en /database y además generar y configurar archivo .env colocando:
+DB_CONNECTION=sqlite
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=/database/database.sqlite
+DB_USERNAME=root
+DB_PASSWORD=
+9. Por último paso: levantar el proyecto con el comando "composer run dev".
 
 
 Inglés:
@@ -27,8 +36,18 @@ Members:
 - Bianca Duarte (Member 3)
 
 Instructions to install the project:
-1. In the repository’s main page, open the Code tab and click "Download .zip".
-2. Extract the .zip file and open the folder using Visual Studio Code.
-3. Make sure you have XAMPP (running) and Node.js installed.
-4. Once the project is open in Visual Studio Code, open the terminal and run: composer run dev.
-5. Finally, open the following address in your browser: http://127.0.0.1:8000/
+Instructions for installing the project:
+1. As a first step, once in our repository, select the "Develop" branch to view our project. Then, open the Code tab and click "Download .zip."
+2. Extract the .zip and open the project through Visual Studio Code (basically, open the project folder).
+3. Before starting the project, you must have XAMPP 8.2.12, Composer 2.8.11, and Node.js 22.18.0 installed.
+4. Once the project is installed in Visual Studio Code, launch XAMPP (Apache and MySQL).
+5. Open the terminal in Visual Studio Code with the Ctrl + Shift + P combination and type "Terminal: Select Default Profile" and then open "Command Prompt (cmd.exe)."
+6. Then run the commands: "composer install" and "npm install"
+7. Create the database.sqlite file in /database and also generate and configure the .env file by entering:
+DB_CONNECTION=sqlite
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=/database/database.sqlite
+DB_USERNAME=root
+DB_PASSWORD=
+9. Finally, run the project with the "composer run dev" command.
