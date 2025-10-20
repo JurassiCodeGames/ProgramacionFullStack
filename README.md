@@ -23,7 +23,8 @@ DB_PORT=3306
 DB_DATABASE=/database/database.sqlite
 DB_USERNAME=root
 DB_PASSWORD=
-9. Por último paso: levantar el proyecto con el comando "composer run dev".
+9. Penúltimo paso, crear la tabla session "php artisan session:table" y migrarlas "php artisan migrate"
+10. Por último paso: levantar el proyecto con el comando "composer run dev".
 
 
 Inglés:
@@ -50,4 +51,5 @@ DB_PORT=3306
 DB_DATABASE=/database/database.sqlite
 DB_USERNAME=root
 DB_PASSWORD=
-9. Finally, run the project with the "composer run dev" command.
+9. The second-to-last step is to create the session table "php artisan session:table" and migrate it "php artisan migrate."
+10. Finally, run the project using the "composer run dev" command.
