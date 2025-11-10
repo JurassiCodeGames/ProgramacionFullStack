@@ -1,14 +1,9 @@
 @extends('template_login_register')
 
-@section('title', 'Registrarse')
-@section('header', 'Registrar Cuenta')
+@section('title', 'Iniciar Sesión')
+@section('header', 'Iniciar Sesión')
 
 @section('content')
-
-    <div class="form-group">
-      <label for="name">Nombre</label>
-      <input type="text" id="name" name="name" class="form-control" required />
-    </div>
 
     <div class="form-group">
       <label for="email">Correo electrónico</label>
@@ -21,11 +16,11 @@
     </div>
 
     <div class="form-group mt-3">
-      <button type="submit" class="btn btn-success w-100">Registrarse</button>
+      <button type="submit" class="btn btn-primary w-100">Ingresar</button>
     </div>
   </form>
 
   <p class="mt-3 text-center">
-    ¿Ya tienes cuenta? <a href="{{ url('/login') }}">Inicia sesión aquí</a>
+    ¿No tienes cuenta? <a href="{{ url('/register') }}">Regístrate aquí</a>
   </p>
 @endsection

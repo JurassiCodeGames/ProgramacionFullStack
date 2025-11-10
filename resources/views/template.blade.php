@@ -23,7 +23,9 @@
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <img src="favicon.ico" alt="Logo" width="40" height="40" class="d-inline-block align-text-top">
-          <a class="nav-link" href="{{ url('/play') }}" id="textoJugar">Jugar</a>
+          @auth
+          <p class="Hola">{{Auth::user()->name}} </p>
+          @endauth
 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" 
                   aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,16 +35,32 @@
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <a class="nav-link active" aria-current="page" href="{{ url('/') }}">Inicio</a>
-              <a class="nav-link" href="{{ url('/rules') }}">Reglas</a>
-              <a class="nav-link" href="{{ url('/info') }}">Información</a>
-              <a class="nav-link" href="{{ url('/project') }}">Este Proyecto</a>
-              <a class="nav-link" href="{{ url('/myv') }}">Misión y Visión</a>
-              <a class="nav-link" href="{{ url('/us') }}" id="textoNosotros">Nosotros</a>
+              <a class="nav-link" href="{{ route('rules') }}">Reglas</a>
+              <a class="nav-link" href="{{ route('info') }}">Información</a>
+              <a class="nav-link" href="{{ route('project') }}">Este Proyecto</a>
+              <a class="nav-link" href="{{ route('myv') }}">Misión y Visión</a>
+              <a class="nav-link" href="{{ route('us') }}" id="textoNosotros">Nosotros</a>
             </div>
 
+            <div id="google_translate_element" class="Traductor"></div>
+
             <div class="navbar-nav ms-auto">
-              <a class="btn btn-primary m-2" href="{{ url('/login') }}">Iniciar Sesión</a>
-              <a class="btn btn-secondary m-2" href="{{ url('/register') }}">Registrarse</a>
+              @guest
+              <a class="btn btn-success m-2" href="{{ route('login') }}">Iniciar Sesión</a>
+              <a class="btn btn-secondary m-2" href="{{ route('auth.register') }}">Registrarse</a>
+              @endguest
+
+              @auth
+              @if(Auth::user()->role === 'admin')
+              <a class="btn btn-warning m-2" href="{{ route('users.index') }}">Panel Admin</a>
+              @endif
+              @endauth
+
+              @auth
+              <a class="btn btn-success m-2" href="{{ route('partidas.index') }}">Jugar</a>
+                <a class="btn btn-dark m-2" href="{{ route('auth.profile') }}">Perfil</a>
+                <a class="btn btn-danger m-2" href="{{ route('auth.logout') }}">Cerrar Sesión</a>
+              @endauth
             </div>
           </div>
         </div>
@@ -61,5 +79,7 @@
             integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" 
             crossorigin="anonymous">
     </script>
+
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   </body>
 </html>

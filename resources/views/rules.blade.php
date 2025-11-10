@@ -2,8 +2,6 @@
 
 @section('body-class', 'fondo-rules')
 @section('content')
-  <main class="container">
-
     <div class="CajaRules">
       <h2 class="tituloRules">Objetivo del Juego</h2>
       <p class="parrafoRules">

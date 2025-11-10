@@ -2,11 +2,9 @@
 
 @section('body-class', 'fondo-info')
 @section('content')
-  <br>
-  <br>
   <main class="container text-center">
 
-    <div class="row">
+    <div class="row mt-5">
       <div class="col">
         <img src="images/Draftosaurus/Draftosaurus - Futurista.png" class="img-fluid w-50" id="Draftosaurus" title="Logo Futurista - Draftosaurus">
       </div>
